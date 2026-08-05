@@ -1,0 +1,44 @@
+# Environment secrets — never commit
+.env
+*.env
+
+# Folders starting with underscore
+_*/
+
+# Go build artefacts
+kiada-go/kiada-go
+*.exe
+*.out
+
+# Large binary/model files
+*.onnx
+*.onnx.data
+*.so
+*.tgz
+*.tar.gz
+*.zip
+*.dylib
+
+# Node/JS (original book samples)
+node_modules/
+
+# Playwright / browser automation
+.playwright-mcp/
+
+# macOS noise
+.DS_Store
+
+# IDE artefacts
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# PDF book files
+*.pdf
+
+# Chapter source folders (book code samples)
+Chapter*/
+
+# Container image source folders (book assets)
+container-images/

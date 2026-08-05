@@ -1,0 +1,11 @@
+# ── ConfigMap: kiada-go-config ─────────────────────────────────────────────────
+# Stores non-sensitive configuration (Chapter 8 — ConfigMaps pattern)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kiada-go-config
+  namespace: kiada
+data:
+  # Override in your deployment; set via env or volume
+  INITIAL_STATUS_MESSAGE: "Welcome to kiada-go on Kubernetes!"
+  LISTEN_PORT: "8080"

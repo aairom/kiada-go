@@ -1,0 +1,8 @@
+# ── Namespace ─────────────────────────────────────────────────────────────────
+# Isolates all kiada-go workloads (Chapter 7 — Namespaces & Labels pattern)
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kiada
+  labels:
+    app: kiada
